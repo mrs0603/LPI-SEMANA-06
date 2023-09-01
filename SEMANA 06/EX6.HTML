@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacao de Strings</title>
+    <script>
+        let frase = 'A história de João e sua moleira';
+        function mostrar(){
+                 console.log("texto original:", frase);
+            let letrasa = 0;
+            for(let i=0; i<frase.length; i++){
+               if(frase.charAt(i) == "a") letrasa++;
+            }
+            console.log(letrasa);
+        }
+        /*todas as vezes que eu quiser percorrer uma quantidades de de letras
+        usa-se um laço de repetição com o for e o CharAt*/
+        
+    </script>
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar</button>
+</body>
+</html>

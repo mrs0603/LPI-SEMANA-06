@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Aleatória</title>
+<script>
+    function mostrar(){
+ let n=parseInt(Math.random()*3);
+if(n ==0){
+    im = "<img src='IMG.jpg'>";
+
+}
+else if (n == 1 ){
+    im = "<img src='IMG 2.jpg'>";
+}
+else if (n == 2 ){
+    im = "<img src='IMG 3.jpg'>";
+}
+document.getElementById('imagem').innerHTML = im
+    }
+</script>
+</head>
+<body>
+    
+    <button onclick="mostrar()">Mostrar</button>
+    <div id="imagem"></div>
+</body>
+</html>
+</html>

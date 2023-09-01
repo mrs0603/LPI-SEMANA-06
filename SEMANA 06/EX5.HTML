@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacao de Strings</title>
+    <script>
+        let frase = 'A história de João e sua moleira';
+        function mostrar(){
+     
+            console.log("texto original:", frase);
+            console.log("lowercase:", frase.tolowercase()); //tudo minúsculo
+            console.log("uppercase:", frase.toUpperCase()); //tudo maiúsclo
+            console.log("length:", frase.length); // qtde de letras na frase
+            console.log("trim:", frase.trim()); // 
+            console.log("slice:", frase.slice(14)); // corta a frase na posição que você indica
+            console.log("replace:", frase.replace("Javascript","PHP")); // substitui um ou mais termos da string
+          
+           
+            for( let a = 1; a<=100; a++){
+                let s = ""+a; //casting int --> String (conversão)
+            document.write(s.padStart(3,"0") +"</br>");
+           } 
+           
+          let n = "1;"
+          console.log(n.padStart(5,"0"));
+          console.log(n.padEnd(5,"0"));
+        }
+        /* um string é uma classe que gera um objeto  
+        e esse objt tem métodos e propriedades se tiver sem parenteses na frente 
+        é uma propriedade e com parenteses na frente é uma propriedade
+        
+        Uma variável primitiva só armazena um valor, uma string pode alterar 
+        as formas do conteúdo da variável
+        */
+    </script>
+</head>
+<body>
+    <button onclick="mostra()">Mostrar</button>
+</body>
+</html>
